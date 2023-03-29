@@ -15,16 +15,16 @@ import (
 
 type Rank struct {
 	Bitvector  *bitvector.BitVector
-	chranks64  []uint64
-	schranks64 [][]uint64
-	chranks32  []uint32
-	schranks32 [][]uint32
-	chranks16  []uint16
-	schranks16 [][]uint16
-	chranks8   []uint8
-	schranks8  [][]uint8
 	chcode     uint8
 	schcode    uint8
+	chranks8   []uint8
+	schranks8  [][]uint8
+	chranks16  []uint16
+	schranks16 [][]uint16
+	chranks32  []uint32
+	schranks32 [][]uint32
+	chranks64  []uint64
+	schranks64 [][]uint64
 }
 
 func NewRankStruct(b *bitvector.BitVector) *Rank {
